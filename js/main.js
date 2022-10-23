@@ -2,9 +2,9 @@ const button = document.querySelector("#button-two");
 const score = document.querySelector("#score");
 let clicks = 0;
 let image = document.querySelector("#none")
-image.classList.add('hide')
+image.classList.add('hideImg')
 button.addEventListener("click", (where, element) => {
-    image.classList.add('hide')
+    image.classList.add('hideImg')
     clicks += 1;
     score.innerHTML = clicks;
     if(clicks%2===0){
@@ -13,6 +13,6 @@ button.addEventListener("click", (where, element) => {
         button.style.background = color;
     }
     if(clicks===5 || clicks===10 || clicks===50 || clicks===100){
-        image.classList.remove('hide');
+        image.classList.remove('hideImg');
     }
 })

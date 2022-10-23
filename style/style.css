@@ -464,7 +464,7 @@ footer p:nth-child(2){
         transform: rotate(405deg);
     }
 }
-.hide
+.hideImg
 {
     display: none;
 }
