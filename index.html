@@ -16,6 +16,12 @@
 
 </head>
 <body>
+<div id="preloader" class="ring">
+    Loading
+    <span class="loader">
+
+    </span>
+</div>
 <div class="page">
     <header>
         <a href="#" class="logo">Logo</a>
@@ -125,18 +131,13 @@
         <p class="end">CopyRight By Kadyrmamat Momunov</p>
     </footer>
 </div>
-<div id="preloader" class="ring">
-    Loading
-    <span class="loader">
-
-    </span>
-</div>
 </body>
 <script src="js/main.js"></script>
 <script>
-    const loader = document.getElementById("preloader");
+    const {fadeOut, style} = document.getElementById("preloader");
     window.addEventListener("load", function () {
-        loader.style.display = "none";
+        style.display = "none";
+        fadeOut().end().delay(400).fadeOut('slow');
     });
 </script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
