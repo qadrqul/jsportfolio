@@ -394,6 +394,20 @@ h5{
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+#cat-img {
+    background-color: #fff;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#cat-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
 
 footer{
     position: relative;
@@ -470,7 +484,7 @@ footer p:nth-child(2){
     display: none;
 }
 
-@media (max-width: 1000px)
+@media (max-width: 900px)
 {
     .myClicker{
         width: 100%;
@@ -663,5 +677,10 @@ footer p:nth-child(2){
     .hide
     {
         display: none;
+    }
+    #cat-img {
+        background-color: #fff;
+        width: 200px;
+        height: 200px;
     }
 }
